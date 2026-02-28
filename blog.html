@@ -3,29 +3,59 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Our Blogs - Amit Khera Photography</title>
-    <meta name="description" content="Learn more about Amit Khera Photography - a professional photography business based in Dehradun and Delhi NCR, providing expert photography services for all occasions worldwide.">
-    <meta name="keywords" content="Amit Khera Photography, Dehradun, Delhi NCR, professional photography, expert photography services">
-    
-    <!-- Open Graph data -->
-    <meta property="og:title" content="About Us - Amit Khera Photography" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://amitkheraphotography.com/about.html" />
-    <meta property="og:description" content="Learn more about Amit Khera Photography - a professional photography business based in Dehradun and Delhi NCR, providing expert photography services for all occasions worldwide." />
-    <meta property="og:image" content="https://amitkheraphotography.com/img/fashion.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
- 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Photography Blog in Dehradun | Tips by Amit Khera</title>
+
+    <meta name="description"
+        content="Photography blog in Dehradun with expert guides on wedding shoots, pre-wedding ideas, outdoor timing, and choosing the right photographer.">
+
+    <meta name="keywords"
+        content="photography blog, wedding photography tips, photography guide, pre-wedding ideas, photography poses, dehradun photographer blog">
+
+    <meta name="author" content="Amit Khera Photography">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://amitkheraphotography.in/blog.html">
+
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="IN-UT">
+    <meta name="geo.placename" content="Dehradun">
+    <meta name="geo.position" content="30.3165;78.0322">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Amit Khera Photography">
+    <meta property="og:title" content="Photography Blog in Dehradun | Tips by Amit Khera">
+    <meta property="og:description"
+        content="Expert photography tips and guides from professional photographer Amit Khera.">
+    <meta property="og:url" content="https://amitkheraphotography.in/blog.html">
+    <meta property="og:image" content="https://amitkheraphotography.in/img/wedding.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Photography Blog in Dehradun | Expert Guides">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-    <!-- Google Web Fonts -->
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,7 +64,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,227 +72,390 @@
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMBH5ZN610"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Custom Blog Styles -->
+    <style>
+        .blog-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            background: white;
+        }
 
-  gtag('config', 'G-SMBH5ZN610');
-</script>
+        .blog-card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .blog-card-body {
+            padding: 30px;
+        }
+
+        .blog-category {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .blog-title {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 15px;
+            line-height: 1.4;
+            min-height: 70px;
+        }
+
+        .blog-excerpt {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .blog-read-more {
+            display: inline-block;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .blog-read-more:hover {
+            background: var(--dark);
+            color: white;
+        }
+
+        .blog-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/wedding.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-header p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <!-- Structured Data - Blog Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://amitkheraphotography.in/blog.html#blog",
+      "name": "Amit Khera Photography Blog",
+      "description": "Professional photography tips, wedding guides, and expert advice.",
+      "url": "https://amitkheraphotography.in/blog.html",
+      "author": {
+        "@type": "Person",
+        "name": "Amit Khera"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Photography Blog Articles",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"url":"https://amitkheraphotography.in/blog/wedding-photography-poses-guide.html"},
+        {"@type":"ListItem","position":2,"url":"https://amitkheraphotography.in/blog/wedding-photography-tips.html"},
+        {"@type":"ListItem","position":3,"url":"https://amitkheraphotography.in/blog/pre-wedding-photoshoot-ideas.html"},
+        {"@type":"ListItem","position":4,"url":"https://amitkheraphotography.in/blog/how-to-choose-wedding-photographer.html"},
+        {"@type":"ListItem","position":5,"url":"https://amitkheraphotography.in/blog/best-time-outdoor-photoshoot.html"}
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
-
-      <!-- Navbar Start -->
+    <!-- Navbar Start -->
     <div class="wrapper">
         <nav>
-          <input type="checkbox" id="show-search">
-          <input type="checkbox" id="show-menu">
-          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-          <div class="content">
-          <div ><a href="index.html"><img class="logo-main" src="./img/logo.png" alt=""></a></div>
-            <ul class="links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="service.html" class="desktop-link">Services</a>
-                <input type="checkbox" id="show-services">
-                <label for="show-services">Services</label>
-                <ul>
-                  <li><a href="wedding.html">Wedding</a></li>
-                  <li><a href="pre-wedding.html">Pre Wedding</a></li>
-                  <li><a href="engagement.html">Engagement</a></li>
-                  <li><a href="fashion.html">Fashion</a></li>
-                  <li><a href="event.html">Event</a></li>
-                  <li><a href="commercial.html">Commercial</a></li>
-                   <li><a href="maternity.html">Maternity</a></li>
-                   <li><a href="music-videos.html">Music Videos</a></li>
-                  </ul>
-              </li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="project.html">Projects</a></li>
-              <li><a href="gallery.html">Photos</a></li>
-              <li><a href="video.html">Videos</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              
-            </ul>
-          </div>
-         
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div><a href="index.html"><img class="logo-main" src="./img/logo.png" alt="Amit Khera Photography"></a>
+                </div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="service.html" class="desktop-link">Services</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Services</label>
+                        <ul>
+                            <li><a href="wedding.html">Wedding</a></li>
+                            <li><a href="pre-wedding.html">Pre Wedding</a></li>
+                            <li><a href="engagement.html">Engagement</a></li>
+                            <li><a href="fashion.html">Fashion</a></li>
+                            <li><a href="event.html">Event</a></li>
+                            <li><a href="commercial.html">Commercial</a></li>
+                            <li><a href="maternity.html">Maternity</a></li>
+                            <li><a href="music-videos.html">Music Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="video.html">Videos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
-      </div>
+    </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid hero-header bg-light py-5 mb-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 mb-3 animated slideInDown">Blogs</h1>
-                    <nav aria-label="breadcrumb animated slideInDown">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            
-                            <li class="breadcrumb-item active" aria-current="page">Blogs</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="col-lg-6 animated fadeIn">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <img class="img-fluid bg-white p-3 w-100" src="img/bride400X500.webp" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid bg-white p-3 w-100" src="img/bridal400X500.webp" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Blog Header -->
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="wow fadeInDown">Photography Blog</h1>
+            <p class="wow fadeInUp">Expert tips, guides, and insights from professional photographer Amit Khera in Dehradun</p>
         </div>
     </div>
-    <!-- Header End -->
 
+    <div class="container py-4">
+        <p class="mb-0 text-center">
+            Looking for service support after reading? Explore
+            <a href="wedding.html">wedding photography in Dehradun</a>,
+            <a href="pre-wedding.html">pre wedding shoot in Dehradun</a>,
+            <a href="photo-studio-dehradun.html">photo studio sessions</a>, and
+            <a href="contact.html">book your shoot</a>.
+        </p>
+    </div>
 
-
+    <!-- Blog Cards Start -->
     <div class="container-xxl py-5">
         <div class="container">
-    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <p class="text-primary text-uppercase mb-2">Our Latest Blogs</p>
-        <h1 class="display-6" style="font-family: 'Cinzel'; margin-bottom: 1rem;">
-           Read our Latest Blogs
-        </h1>        
-    </div>
-    </div>
-    </div>
-
-
-
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">           
-            <div class="flex flex-wrap -m-4">             
-                <div class="p-4 md:w-1/3">               
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">                 
-                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./img/blogimg1.jpeg" alt="Wedding Photography Tips">                 
-                        <div class="p-6">                   
-                            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"></h2>                   
-                            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Find Your Ideal Wedding Photographer in 2025 – See Average Costs Now! </h1>                   
-                            <p class="leading-relaxed mb-3">Discover the latest trends and techniques that will make your wedding photos stand out in 2025. From lighting to poses, get expert advice.</p>                   
-                            <div class="flex items-center flex-wrap ">                     
-                                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="./find-your-ideal-wedding-photographer-2025-average-costs.html">Learn More                       
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">                         
-                                        <path d="M5 12h14"></path>                         
-                                        <path d="M12 5l7 7-7 7"></path>                       
-                                    </svg>                     
-                                </a>                     
-                                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">                       
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">                         
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>                         
-                                        <circle cx="12" cy="12" r="3"></circle>                       
-                                    </svg>2.1K                     
-                                </span>                     
-                                <span class="text-gray-400 inline-flex items-center leading-none text-sm">                       
-                                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">                         
-                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>                       
-                                    </svg>12                     
-                                </span>                   
-                            </div>                 
-                        </div>               
-                    </div>             
+            <div class="row g-4">
+                <!-- Blog Post 1 - Wedding Poses -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-card">
+                        <img class="blog-card-img" src="img/wedding.webp" alt="Wedding Photography Poses">
+                        <div class="blog-card-body">
+                            <span class="blog-category">Wedding Tips</span>
+                            <h3 class="blog-title">50+ Wedding Photography Poses Guide</h3>
+                            <p class="blog-excerpt">Master the art of wedding photography with 50+ pose ideas for bride,
+                                groom, and couples. Expert tips for perfect wedding photos.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-2"></i>Nov 29, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>10 min read</span>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="blog/wedding-photography-poses-guide.html" class="blog-read-more">Read More <i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-  
-          </div>
-        </div>
-      </section>                           
 
-
-
-
-
-
-
-
-
-
-
-       <!-- Footer Start -->
- <div class="container-fluid footer position-relative bg-dark text-white-50 mt-5 py-5 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="row g-5 py-5">
-        <div class="col-lg-6 pe-lg-5">
-            <a href="index.html" class="navbar-brand">
-                <img src="img/logo.png" alt="" class="logo-main">
-            </a>
-            <p>At Amit Khera Photography, we are passionate about capturing your most precious moments and turning them into cherished memories. Trust us to provide you with high-quality and creative photography services that exceed your expectations.</p>
-            <p><i class="fa fa-map-marker-alt me-2"></i>Rajender Nagar, Dehradun, Uttarakhand 248001</p>
-            <p><i class="fa fa-phone-alt me-2"></i>+91 98970 12349</p>
-            <p><i class="fa fa-envelope me-2"></i>contact@amitkheraphotography.com</p>
-            <div class="d-flex justify-content-start mt-4">
-              <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.instagram.com/amitkheraphotography/?hl=en"><i class="fab fa-instagram"></i></a>
-               
-                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.facebook.com/amitkheraphotography/"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://m.youtube.com/c/AMITKHERAPHOTOGRAPHY"><i class="fab fa-youtube"></i></a>
-               
-              
-            </div>
-        </div>
-        <div class="col-lg-6 ps-lg-5">
-            <div class="row g-5">
-                <div class="col-sm-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Services</a>
-                    <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
-                    <a class="btn btn-link" href="terms-and-condition.html">Terms & Condition</a>
+                <!-- Blog Post 2 - Photography Tips -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-card">
+                        <img class="blog-card-img" src="img/bride400X500.webp" alt="Wedding Photography Tips">
+                        <div class="blog-card-body">
+                            <span class="blog-category">Expert Guide</span>
+                            <h3 class="blog-title">15 Essential Wedding Photography Tips</h3>
+                            <p class="blog-excerpt">Learn professional wedding photography techniques. Lighting,
+                                composition, and timing secrets for stunning wedding photos.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-2"></i>Nov 29, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>8 min read</span>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="blog/wedding-photography-tips.html" class="blog-read-more">Read More <i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <h4 class="text-light mb-4">Popular Links</h4>
-                    <a class="btn btn-link" href="wedding.html">Wedding Shoot</a>
-                    <a class="btn btn-link" href="pre-wedding.html">Pre Wedding Shoot</a>
-                    <a class="btn btn-link" href="engagement.html">Engagement Shoot</a>
-                    <a class="btn btn-link" href="fashion.html">Fashion Photography</a>
-                    <a class="btn btn-link" href="event.html">Event Photography</a>
-                    <a class="btn btn-link" href="commercial.html">Commercial Photography</a>
+
+                <!-- Blog Post 3 - Pre-Wedding Ideas -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-card">
+                        <img class="blog-card-img" src="img/pre-wedding.webp" alt="Pre-Wedding Photoshoot Ideas">
+                        <div class="blog-card-body">
+                            <span class="blog-category">Pre-Wedding</span>
+                            <h3 class="blog-title">20 Creative Pre-Wedding Photoshoot Ideas</h3>
+                            <p class="blog-excerpt">Discover unique and romantic pre-wedding shoot concepts. From
+                                outdoor locations to themed shoots for couples.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-2"></i>Nov 29, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>7 min read</span>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="blog/pre-wedding-photoshoot-ideas.html" class="blog-read-more">Read More <i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <div class="w-100">
-                        <div class="input-group">
-                          <p>You can subscribe to our newsletter by sending us an email at nl@amitkheraphotography.com, and we will add you to our mailing list.</p>
+
+                <!-- Blog Post 4 - Choose Photographer -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-card">
+                        <img class="blog-card-img" src="img/about-bride.webp" alt="Choose Wedding Photographer">
+                        <div class="blog-card-body">
+                            <span class="blog-category">Buying Guide</span>
+                            <h3 class="blog-title">How to Choose Perfect Wedding Photographer</h3>
+                            <p class="blog-excerpt">Complete guide to selecting the right photographer. Questions to
+                                ask, portfolios to review, and red flags to avoid.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-2"></i>Nov 29, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>9 min read</span>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="blog/how-to-choose-wedding-photographer.html" class="blog-read-more">Read More
+                                    <i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 - Outdoor Timing -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-card">
+                        <img class="blog-card-img" src="img/bridal400X500.webp" alt="Best Time Outdoor Photoshoot">
+                        <div class="blog-card-body">
+                            <span class="blog-category">Lighting Guide</span>
+                            <h3 class="blog-title">Best Time for Outdoor Photoshoots</h3>
+                            <p class="blog-excerpt">Learn about golden hour, blue hour, and perfect lighting conditions.
+                                Seasonal tips for stunning outdoor photography.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt me-2"></i>Nov 29, 2025</span>
+                                <span><i class="far fa-clock me-2"></i>6 min read</span>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="blog/best-time-outdoor-photoshoot.html" class="blog-read-more">Read More <i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
-  <!-- Footer End -->
-  
-  
+    <!-- Blog Cards End -->
+
+    <div class="container py-5">
+        <div class="bg-light p-4 rounded">
+            <h2 style="font-family: 'Cinzel';">Need a Photographer in Dehradun?</h2>
+            <p>Our blog helps you plan better shoots, and our team handles execution from concept to final delivery.</p>
+            <p class="mb-0">
+                <a class="btn btn-primary me-2" href="photographer-in-dehradun.html">Photographer in Dehradun</a>
+                <a class="btn btn-outline-primary me-2" href="service.html">All Services</a>
+                <a class="btn btn-outline-dark" href="contact.html">Contact Us</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-dark text-white-50 mt-5 py-5 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <div class="row g-5 py-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Amit Khera Photography" class="logo-main">
+                </a>
+                <p>At Amit Khera Photography, we are passionate about capturing your most precious moments and turning
+                    them into cherished memories.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Rajender Nagar, Dehradun, Uttarakhand 248001</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+91 98970 12349</p>
+                <p><i class="fa fa-envelope me-2"></i>contact@amitkheraphotography.in</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2"
+                        href="https://www.instagram.com/amitkheraphotography/?hl=en"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2"
+                        href="https://www.facebook.com/amitkheraphotography/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2"
+                        href="https://m.youtube.com/c/AMITKHERAPHOTOGRAPHY"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="service.html">Services</a>
+                        <a class="btn btn-link" href="blog.html">Blog</a>
+                        <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Popular Links</h4>
+                        <a class="btn btn-link" href="wedding.html">Wedding Shoot</a>
+                        <a class="btn btn-link" href="pre-wedding.html">Pre Wedding Shoot</a>
+                        <a class="btn btn-link" href="engagement.html">Engagement Shoot</a>
+                        <a class="btn btn-link" href="fashion.html">Fashion Photography</a>
+                        <a class="btn btn-link" href="event.html">Event Photography</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
     <!-- Copyright Start -->
     <div class="container-fluid bg-dark text-white border-top border-secondary px-0">
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="py-4 px-5 text-center text-md-start">
-                <p class="mb-0">&copy; <a class="text-primary" href="#">Amit Khera Photography</a>. All Rights Reserved.</p>
+                <p class="mb-0">&copy; <a class="text-primary" href="#">Amit Khera Photography</a>. All Rights Reserved.
+                </p>
             </div>
             <div class="py-4 px-5 bg-secondary footer-shape position-relative text-center text-md-end">
-               
-                <p class="mb-0">Designed by <a class="text-primary fw-bold" href="https://mayankgamerz.tech">Mayank Kumar</a>
+                <p class="mb-0">Designed by <a class="text-primary fw-bold" href="https://mayankgamerz.tech">Mayank
+                        Kumar</a>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -271,12 +463,8 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Alumni Sans Pinstripe' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
